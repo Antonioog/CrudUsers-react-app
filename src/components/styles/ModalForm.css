@@ -1,0 +1,63 @@
+.modalForm{
+    position: fixed;
+    background-color: rgba(0,0,0,0.567);
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    display: none;
+}
+.activeForm{
+    display: grid;
+}
+.modalForm__form{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 4px;
+}
+.modalForm__title{
+    font-size: 30px;
+    margin: 10px 0;
+}
+.modalForm__x{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.modalForm__x:hover{
+    color: rgb(70, 4, 4);
+}
+.modalForm__div{
+    line-height: 25px;
+}
+.modalForm__label{
+    display: block;
+}
+.modalForm__input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    font-family: var(--principal-font);
+}
+.modalForm__btn{
+    background-color: var(--purple);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 200ms ease;
+}
+.modalForm__btn:hover{
+    background-color: var(--medium-purple);
+}

@@ -1,0 +1,101 @@
+
+/*Estilos generales*/
+
+.userCard__title{
+    font-size: 20px;
+    color: #2C3E50;
+}
+
+.userCard__delete{
+    background-color: white;
+    font-size: 25px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.userCard__delete:hover{
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.userCard__edit{
+    background-color:white;
+    font-size: 25px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.userCard__edit:hover{
+    color: rgba(0, 0, 255, 0.647);
+    font-size: 30px;
+}
+ /*Estilos Desktop*/
+
+@media (min-width: 577px) {
+    .section{
+        padding: 8px;
+        margin: 8px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .userCard{
+        background-color: white;
+        padding: 20px;
+        color: black;
+        font-size: 12px;
+        border-radius: 8px;
+        height: 220px;
+        line-height: 30px;
+    }
+   
+}
+
+/*Estilos Mobile*/
+
+@media (max-width: 576px) {
+    .userCard{
+        padding: 20px;
+        margin: 15px;
+        border-radius: 8px;
+        line-height: 25px;
+        background-color: white;
+    }
+    .userCard__title{
+        padding: 0;
+        margin: 0;
+    }
+    hr{
+        border: none;
+    }
+    .userCard__main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 376px) {
+    .userCard{
+        padding: 20px;
+        margin: 15px;
+    }
+    hr{
+        border: none;
+    }
+    .userCard__main{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ 
+ 
+ 
+
+
+
